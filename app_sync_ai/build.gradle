@@ -1,6 +1,8 @@
 apply plugin: 'com.android.library'
 group = 'teamup'
 version = '1.0'
+apply plugin: 'maven-publish'
+
 
 android {
     compileSdkVersion 33
