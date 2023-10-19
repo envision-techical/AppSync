@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiite"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="4dp"
+            android:text="Click Me2"
+
+            android:textAllCaps="false" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/white_card_view"
+            android:backgroundTint="#FFF"
+            android:elevation="4dp"
+            android:visibility="gone">
+
+            <AutoCompleteTextView
+                android:id="@+id/digit_edt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Enter Digit"
+                android:paddingHorizontal="15dp" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="Quote here dljklk
+dasdadadadad
+ada\nds"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:weightSum="2">
+
+
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/Green_Apple"
+                android:maxLength="50"
+                android:textColor="@color/whiite" />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <com.teamup.app_sync.AppSyncImageSlider
+            android:id="@+id/tl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:background_color="@color/black"
+            app:period_in_ms="100" />
+
+    </LinearLayout>
+
+    <com.teamup.app_sync.AppSyncFilter
+        android:id="@+id/appsync_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+
+    <RelativeLayout
+        android:id="@+id/manage_reler"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/white_card_view"
+        android:clickable="true"
+        android:elevation="4dp"
+        android:foreground="?selectableItemBackground"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/hitman" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Manage Apps"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img_1"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:contentDescription="TODO"
+        android:scaleType="fitXY"
+        android:src="@drawable/logo"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:text="Click Me"
+        android:textAllCaps="false" />
+
+
+</RelativeLayout>

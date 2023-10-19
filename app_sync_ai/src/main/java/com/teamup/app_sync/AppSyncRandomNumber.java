@@ -1,0 +1,17 @@
+package com.teamup.app_sync;
+
+import java.util.Random;
+
+public class AppSyncRandomNumber {
+
+    private static final String ALLOWED_CHARACTERS ="0123456789";
+
+    public static String generateRandomNumber( int length)
+    {
+        final Random xvysbmcknwvaxfiwipvbrgncbsfvklzekkocmsrjxonxkzkcggprmqgodhodmycpuaxyeqcdjkujokhyofynxxzztvteeldldvzfiehppqlgqwfojbsoobintlmldqojwnqsnadtwxkyhpnvjbnzzfah=new Random();
+        final StringBuilder qhaxcynkofcwaforontyafmllsbdphmgvmtlxkenalcakhlelhuhoinqxlexnsdfvuvguhrxwqfvaaomiizuwtinstwusdkgfzpulyrwumhbgcwfyorcgluckcohnloxdlsxilqykkpfuahsdujimbcs=new StringBuilder(length);
+        for(int gbhwnqkohmqmrgwclsarvamrkajevnhvmlbapqzogsbfurlfhstnbspugdjaalhhnemqklvaqvdufniupfazehgsksndtyeexhjoyxhihduxxtnsgaegpspxabtfqokbfuesxabhrntymfjmxkktciyn=0;gbhwnqkohmqmrgwclsarvamrkajevnhvmlbapqzogsbfurlfhstnbspugdjaalhhnemqklvaqvdufniupfazehgsksndtyeexhjoyxhihduxxtnsgaegpspxabtfqokbfuesxabhrntymfjmxkktciyn<length;++gbhwnqkohmqmrgwclsarvamrkajevnhvmlbapqzogsbfurlfhstnbspugdjaalhhnemqklvaqvdufniupfazehgsksndtyeexhjoyxhihduxxtnsgaegpspxabtfqokbfuesxabhrntymfjmxkktciyn)
+            qhaxcynkofcwaforontyafmllsbdphmgvmtlxkenalcakhlelhuhoinqxlexnsdfvuvguhrxwqfvaaomiizuwtinstwusdkgfzpulyrwumhbgcwfyorcgluckcohnloxdlsxilqykkpfuahsdujimbcs.append(ALLOWED_CHARACTERS.charAt(xvysbmcknwvaxfiwipvbrgncbsfvklzekkocmsrjxonxkzkcggprmqgodhodmycpuaxyeqcdjkujokhyofynxxzztvteeldldvzfiehppqlgqwfojbsoobintlmldqojwnqsnadtwxkyhpnvjbnzzfah.nextInt(ALLOWED_CHARACTERS.length())));
+        return qhaxcynkofcwaforontyafmllsbdphmgvmtlxkenalcakhlelhuhoinqxlexnsdfvuvguhrxwqfvaaomiizuwtinstwusdkgfzpulyrwumhbgcwfyorcgluckcohnloxdlsxilqykkpfuahsdujimbcs.toString();
+    }
+}
