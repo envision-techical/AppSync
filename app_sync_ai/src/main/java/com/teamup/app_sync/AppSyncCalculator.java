@@ -33,13 +33,13 @@ public class AppSyncCalculator extends AppCompatActivity {
     private Button b_para2;
     private TextView t1;
     private TextView t2;
-    private final char ADDITION = '+';
-    private final char SUBTRACTION = '-';
-    private final char MULTIPLICATION = '*';
-    private final char DIVISION = '/';
-    private final char EQU = '=';
-    private final char EXTRA = '@';
-    private final char MODULUS = '%';
+     final char ADDITION = '+';
+    final char SUBTRACTION = '-';
+    final char MULTIPLICATION = '*';
+    final char DIVISION = '/';
+     final char EQU = '=';
+     final char EXTRA = '@';
+     final char MODULUS = '%';
     private char ACTION;
     private double val1 = Double.NaN;
     private double val2;
@@ -369,6 +369,8 @@ public class AppSyncCalculator extends AppCompatActivity {
                         break;
                     case EQU:
                         break;
+                    default:
+                        throw new IllegalStateException("Unexpected value: " + ACTION);
                 }
             } else {
                 val1 = Double.parseDouble(t1.getText().toString());
